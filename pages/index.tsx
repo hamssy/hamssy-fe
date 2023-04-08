@@ -182,7 +182,7 @@ export const mobileMenuOpenAtom = atom(false);
 
 const Home = () => {
   return (
-    <div className="bg-white">
+    <>
       <MobileMenu navigation={navigation} currencies={currencies} />
       <div className="relative bg-gray-900">
         <DecorativeImage />
@@ -194,9 +194,7 @@ const Home = () => {
         <ShopByCategory categories={categories} />
         <ShopByCollection collections={collections} />
       </main>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 
