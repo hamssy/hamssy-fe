@@ -25,6 +25,7 @@ import { atom, useSetAtom } from "jotai";
 import { MobileMenu } from "@/components/MobileMenu";
 import { DecorativeImage } from "@/components/DecorativeImage";
 import { CurrencySelector } from "@/components/CurrencySelector";
+import { Account } from "@/components/Account";
 
 export type Navigation = {
   categories: {
@@ -234,23 +235,8 @@ export default function Example() {
             {/* Top navigation */}
             <div className="bg-gray-900">
               <div className="mx-auto flex h-10 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                {/* Currency selector */}
                 <CurrencySelector currencies={currencies} />
-
-                <div className="flex items-center space-x-6">
-                  <a
-                    href="#"
-                    className="text-sm font-medium text-white hover:text-gray-100"
-                  >
-                    Sign in
-                  </a>
-                  <a
-                    href="#"
-                    className="text-sm font-medium text-white hover:text-gray-100"
-                  >
-                    Create an account
-                  </a>
-                </div>
+                <Account />
               </div>
             </div>
 
