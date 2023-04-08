@@ -5,7 +5,6 @@ import { Header } from "@/components/Header";
 import { Introduction } from "@/components/Introduction";
 import { ShopByCategory } from "@/components/ShopByCategory";
 import { ShopByCollection } from "@/components/ShopByCollection";
-import { FeaturedSection } from "@/components/FeaturedSection";
 import { Footer } from "@/components/Footer";
 
 export type Navigation = {
@@ -194,7 +193,6 @@ const Home = () => {
       <main>
         <ShopByCategory categories={categories} />
         <ShopByCollection collections={collections} />
-        <FeaturedSection />
       </main>
 
       <Footer />
