@@ -37,11 +37,11 @@ const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
 const navigation = {
   categories: [
     {
-      name: "Women",
+      name: "POP",
       featured: [
-        { name: "Sleep", href: "#" },
-        { name: "Swimwear", href: "#" },
-        { name: "Underwear", href: "#" },
+        { name: "Albums", href: "#" },
+        { name: "MD", href: "#" },
+        { name: "Digital", href: "#" },
       ],
       collection: [
         { name: "Everything", href: "#" },
@@ -50,26 +50,23 @@ const navigation = {
         { name: "Sale", href: "#" },
       ],
       categories: [
-        { name: "Basic Tees", href: "#" },
-        { name: "Artwork Tees", href: "#" },
-        { name: "Bottoms", href: "#" },
-        { name: "Underwear", href: "#" },
-        { name: "Accessories", href: "#" },
+        { name: "K-Pop", href: "#" },
+        { name: "Webtoons", href: "#" },
+        { name: "Dramas", href: "#" },
+        { name: "Movies", href: "#" },
       ],
       brands: [
-        { name: "Full Nelson", href: "#" },
-        { name: "My Way", href: "#" },
-        { name: "Re-Arranged", href: "#" },
-        { name: "Counterfeit", href: "#" },
+        { name: "Shinee", href: "#" },
+        { name: "Taemin", href: "#" },
         { name: "Significant Other", href: "#" },
       ],
     },
     {
-      name: "Men",
+      name: "BOOKS",
       featured: [
-        { name: "Casual", href: "#" },
-        { name: "Boxers", href: "#" },
-        { name: "Outdoor", href: "#" },
+        { name: "Paper Book", href: "#" },
+        { name: "E-Book", href: "#" },
+        { name: "MD", href: "#" },
       ],
       collection: [
         { name: "Everything", href: "#" },
@@ -78,11 +75,10 @@ const navigation = {
         { name: "Sale", href: "#" },
       ],
       categories: [
-        { name: "Artwork Tees", href: "#" },
-        { name: "Pants", href: "#" },
-        { name: "Accessories", href: "#" },
-        { name: "Boxers", href: "#" },
-        { name: "Basic Tees", href: "#" },
+        { name: "Fiction", href: "#" },
+        { name: "Non-fiction", href: "#" },
+        { name: "Photo", href: "#" },
+        { name: "Others", href: "#" },
       ],
       brands: [
         { name: "Significant Other", href: "#" },
@@ -93,10 +89,7 @@ const navigation = {
       ],
     },
   ],
-  pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
-  ],
+  pages: [{ name: "ABOUT", href: "#" }],
 };
 
 export type Category = {
