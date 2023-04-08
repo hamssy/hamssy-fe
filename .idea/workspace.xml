@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/ShopByCategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,18 +35,18 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "/Users/hyemin/hamssy-fe/node_modules/prettier",
-    "settings.editor.selected.configurable": "actions.on.save",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "/Users/hyemin/hamssy-fe/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/components/ShopByCategory.tsx" />
       <recent name="$PROJECT_DIR$/components/Introduction.tsx" />
       <recent name="$PROJECT_DIR$/components/Navigation.tsx" />
       <recent name="$PROJECT_DIR$/components/FlyoutMenus.tsx" />
       <recent name="$PROJECT_DIR$/components/Logo.tsx" />
-      <recent name="$PROJECT_DIR$/components/Account.tsx" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680935186097</updated>
-      <workItem from="1680935189524" duration="6449000" />
+      <workItem from="1680935189524" duration="7107000" />
     </task>
     <task id="LOCAL-00001" summary="modify function">
       <created>1680937184024</created>
@@ -183,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680942338352</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="remove feature section">
+      <created>1680942492599</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1680942492599</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +226,7 @@
     <MESSAGE value="extract Navigation" />
     <MESSAGE value="move Navigation as Header" />
     <MESSAGE value="move Introduction" />
-    <option name="LAST_COMMIT_MESSAGE" value="move Introduction" />
+    <MESSAGE value="remove feature section" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove feature section" />
   </component>
 </project>
