@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
+    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="move Footer">
+      <change afterPath="$PROJECT_DIR$/pages/categories/[id]/products/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/classNames.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FlyoutMenus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FlyoutMenus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,11 +45,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/utils/classNames.ts" />
       <recent name="$PROJECT_DIR$/components/Footer.tsx" />
       <recent name="$PROJECT_DIR$/components/FeaturedSection.tsx" />
       <recent name="$PROJECT_DIR$/components/ShopByCollection.tsx" />
       <recent name="$PROJECT_DIR$/components/ShopByCategory.tsx" />
-      <recent name="$PROJECT_DIR$/components/Introduction.tsx" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -213,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680944019024</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="move Footer">
+      <created>1680944162728</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1680944162728</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +260,7 @@
     <MESSAGE value="remove feature section" />
     <MESSAGE value="move ShopByCategory" />
     <MESSAGE value="move FeaturedSection" />
-    <option name="LAST_COMMIT_MESSAGE" value="move FeaturedSection" />
+    <MESSAGE value="move Footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="move Footer" />
   </component>
 </project>

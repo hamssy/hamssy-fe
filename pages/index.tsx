@@ -184,9 +184,6 @@ const collections = [
 
 export const mobileMenuOpenAtom = atom(false);
 
-export const classNames = (...classes: string[]) =>
-  classes.filter(Boolean).join(" ");
-
 const Home = () => {
   return (
     <div className="bg-white">

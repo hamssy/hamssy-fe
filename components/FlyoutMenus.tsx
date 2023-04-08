@@ -1,6 +1,7 @@
 import { Popover, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { classNames, Navigation } from "@/pages";
+import { Navigation } from "@/pages";
+import { classNames } from "@/utils/classNames";
 
 type Props = {
   navigation: Navigation;

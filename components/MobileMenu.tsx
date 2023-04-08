@@ -3,7 +3,8 @@ import { Dialog, Tab, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { classNames, mobileMenuOpenAtom, Navigation } from "@/pages";
+import { mobileMenuOpenAtom, Navigation } from "@/pages";
+import { classNames } from "@/utils/classNames";
 
 type Props = {
   currencies: string[];
