@@ -10,7 +10,8 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { classNames } from "@/utils/classNames";
 import { Logo } from "@/components/Logo";
-import { Navigation } from "@/pages";
+import { mobileMenuOpenAtom, Navigation } from "@/pages";
+import { useSetAtom } from "jotai";
 
 type Props = {
   navigation: Navigation;
@@ -18,7 +19,7 @@ type Props = {
 };
 
 export const Header = ({ navigation, currencies }: Props) => {
-  const [open, setOpen] = useState(false);
+  const setMobileMenuOpen = useSetAtom(mobileMenuOpenAtom);
 
   return (
     <header className="relative">
@@ -271,7 +272,7 @@ export const Header = ({ navigation, currencies }: Props) => {
                   <button
                     type="button"
                     className="-ml-2 rounded-md bg-white p-2 text-gray-400"
-                    onClick={() => setOpen(true)}
+                    onClick={() => setMobileMenuOpen(true)}
                   >
                     <span className="sr-only">Open menu</span>
                     <Bars3Icon className="h-6 w-6" aria-hidden="true" />
