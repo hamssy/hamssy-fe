@@ -3,8 +3,14 @@ import { Dialog, Tab, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { classNames, mobileMenuOpenAtom, Navigation } from "@/pages";
 
-export const MobileMenu = () => {
+type Props = {
+  currencies: string[];
+  navigation: Navigation;
+};
+
+export const MobileMenu = ({ navigation, currencies }: Props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useAtom(mobileMenuOpenAtom);
 
   return (

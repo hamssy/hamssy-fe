@@ -25,6 +25,18 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { atom, useSetAtom } from "jotai";
 import { MobileMenu } from "@/components/MobileMenu";
 
+export type Navigation = {
+  categories: {
+    name: string;
+    featured: {
+      name: string;
+      href: string;
+      imageSrc: string;
+      imageAlt: string;
+    }[];
+  }[];
+  pages: { name: string; href: string }[];
+};
 const currencies = ["KRW", "USD", "JPY"];
 const navigation = {
   categories: [
@@ -200,9 +212,10 @@ const footerNavigation = {
   ],
 };
 
-const mobileMenuOpenAtom = atom(false);
+export const mobileMenuOpenAtom = atom(false);
 
-const classNames = (...classes: string[]) => classes.filter(Boolean).join(" ");
+export const classNames = (...classes: string[]) =>
+  classes.filter(Boolean).join(" ");
 
 export default function Example() {
   const setMobileMenuOpen = useSetAtom(mobileMenuOpenAtom);
@@ -210,7 +223,7 @@ export default function Example() {
   return (
     <div className="bg-white">
       {/* Mobile menu */}
-      <MobileMenu />
+      <MobileMenu navigation={navigation} currencies={currencies} />
       {/* Hero section */}
       <div className="relative bg-gray-900">
         {/* Decorative image and overlay */}
