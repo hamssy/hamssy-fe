@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="move Logo">
-      <change afterPath="$PROJECT_DIR$/components/Logo.tsx" afterDir="false" />
+    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/FlyoutMenus.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
@@ -42,11 +42,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/components/FlyoutMenus.tsx" />
       <recent name="$PROJECT_DIR$/components/Logo.tsx" />
       <recent name="$PROJECT_DIR$/components/Account.tsx" />
       <recent name="$PROJECT_DIR$/components/CurrencySelector.tsx" />
       <recent name="$PROJECT_DIR$/components/DecorativeImage.tsx" />
-      <recent name="$PROJECT_DIR$/components/MobileMenu.tsx" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680935186097</updated>
-      <workItem from="1680935189524" duration="5345000" />
+      <workItem from="1680935189524" duration="5635000" />
     </task>
     <task id="LOCAL-00001" summary="modify function">
       <created>1680937184024</created>
@@ -143,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680939557602</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="move Logo and extract FlywayMenus">
+      <created>1680941367398</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680941367398</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +178,7 @@
     <MESSAGE value="extract CurrencySelector" />
     <MESSAGE value="move CurrencySelector" />
     <MESSAGE value="move Account" />
-    <option name="LAST_COMMIT_MESSAGE" value="move Account" />
+    <MESSAGE value="move Logo and extract FlywayMenus" />
+    <option name="LAST_COMMIT_MESSAGE" value="move Logo and extract FlywayMenus" />
   </component>
 </project>
