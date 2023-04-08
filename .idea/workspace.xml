@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/FlyoutMenus.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
@@ -57,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680935186097</updated>
-      <workItem from="1680935189524" duration="5635000" />
+      <workItem from="1680935189524" duration="5831000" />
     </task>
     <task id="LOCAL-00001" summary="modify function">
       <created>1680937184024</created>
@@ -150,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680941367398</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="rename page">
+      <created>1680941645498</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680941645498</updated>
+    </task>
+    <task id="LOCAL-00015" summary="CurrencySelector">
+      <created>1680941669124</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680941669124</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +192,8 @@
     <MESSAGE value="move CurrencySelector" />
     <MESSAGE value="move Account" />
     <MESSAGE value="move Logo and extract FlywayMenus" />
-    <option name="LAST_COMMIT_MESSAGE" value="move Logo and extract FlywayMenus" />
+    <MESSAGE value="rename page" />
+    <MESSAGE value="CurrencySelector" />
+    <option name="LAST_COMMIT_MESSAGE" value="CurrencySelector" />
   </component>
 </project>
