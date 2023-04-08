@@ -187,7 +187,7 @@ const products1 = [
     imageAlt:
       "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
   },
-  // More products...
+  // More product...
 ];
 const products2 = [
   {
@@ -223,7 +223,7 @@ const products2 = [
     imageAlt:
       "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
   },
-  // More products...
+  // More product...
 ];
 const footerNavigation = {
   products: [

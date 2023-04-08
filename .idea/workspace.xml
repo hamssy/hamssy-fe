@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="add category page">
-      <change afterPath="$PROJECT_DIR$/pages/order/checkout/index.tsx" afterDir="false" />
+    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/categories/[categoryId]/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[categoryId]/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/categories/[categoryId]/products/[productId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[categoryId]/product/[productId].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/order/checkout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/order/checkout/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680946303234</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add checkout page">
+      <created>1680954249953</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1680954249953</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +282,7 @@
     <MESSAGE value="move Footer" />
     <MESSAGE value="add product page" />
     <MESSAGE value="add category page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add category page" />
+    <MESSAGE value="add checkout page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add checkout page" />
   </component>
 </project>

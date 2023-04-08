@@ -19,7 +19,7 @@ const products = [
     imageAlt:
       "Moss green canvas compact backpack with double top zipper, zipper front pouch, and matching carry handle and backpack straps.",
   },
-  // More products...
+  // More product...
 ];
 
 export default function Example() {
