@@ -1,11 +1,7 @@
-import { Disclosure } from "@headlessui/react";
-import { LockClosedIcon } from "@heroicons/react/20/solid";
+import { Fragment } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
-const subtotal = "$210.00";
-const discount = { code: "CHEAPSKATE", amount: "$24.00" };
-const taxes = "$23.68";
-const shipping = "$22.00";
-const total = "$341.68";
 const products = [
   {
     id: 1,
@@ -19,325 +15,186 @@ const products = [
     imageAlt:
       "Moss green canvas compact backpack with double top zipper, zipper front pouch, and matching carry handle and backpack straps.",
   },
-  // More product...
+  // More products...
 ];
 
-export default function Example() {
+export default function Checkout() {
   return (
-    <>
-      {/*
-        This example requires updating your template:
+    <div className="bg-white">
+      {/* Background color split screen for large screens */}
+      <div
+        className="fixed left-0 top-0 hidden h-full w-1/2 bg-white lg:block"
+        aria-hidden="true"
+      />
+      <div
+        className="fixed right-0 top-0 hidden h-full w-1/2 bg-gray-50 lg:block"
+        aria-hidden="true"
+      />
 
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
-      <main className="lg:flex lg:min-h-full lg:flex-row-reverse lg:overflow-hidden">
-        <div className="px-4 py-6 sm:px-6 lg:hidden">
-          <div className="mx-auto flex max-w-lg">
-            <a href="#">
-              <span className="sr-only">Your Company</span>
-              <img
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-                className="h-8 w-auto"
-              />
-            </a>
-          </div>
-        </div>
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-x-16 lg:grid-cols-2 lg:px-8 xl:gap-x-48">
+        <h1 className="sr-only">Order information</h1>
 
-        <h1 className="sr-only">Checkout</h1>
-
-        {/* Mobile order summary */}
-        <section
-          aria-labelledby="order-heading"
-          className="bg-gray-50 px-4 py-6 sm:px-6 lg:hidden"
-        >
-          <Disclosure as="div" className="mx-auto max-w-lg">
-            {({ open }) => (
-              <>
-                <div className="flex items-center justify-between">
-                  <h2
-                    id="order-heading"
-                    className="text-lg font-medium text-gray-900"
-                  >
-                    Your Order
-                  </h2>
-                  <Disclosure.Button className="font-medium text-indigo-600 hover:text-indigo-500">
-                    {open ? (
-                      <span>Hide full summary</span>
-                    ) : (
-                      <span>Show full summary</span>
-                    )}
-                  </Disclosure.Button>
-                </div>
-
-                <Disclosure.Panel>
-                  <ul
-                    role="list"
-                    className="divide-y divide-gray-200 border-b border-gray-200"
-                  >
-                    {products.map((product) => (
-                      <li key={product.id} className="flex space-x-6 py-6">
-                        <img
-                          src={product.imageSrc}
-                          alt={product.imageAlt}
-                          className="h-40 w-40 flex-none rounded-md bg-gray-200 object-cover object-center"
-                        />
-                        <div className="flex flex-col justify-between space-y-4">
-                          <div className="space-y-1 text-sm font-medium">
-                            <h3 className="text-gray-900">{product.name}</h3>
-                            <p className="text-gray-900">{product.price}</p>
-                            <p className="text-gray-500">{product.color}</p>
-                            <p className="text-gray-500">{product.size}</p>
-                          </div>
-                          <div className="flex space-x-4">
-                            <button
-                              type="button"
-                              className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
-                            >
-                              Edit
-                            </button>
-                            <div className="flex border-l border-gray-300 pl-4">
-                              <button
-                                type="button"
-                                className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
-                              >
-                                Remove
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <form className="mt-10">
-                    <label
-                      htmlFor="discount-code-mobile"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Discount code
-                    </label>
-                    <div className="mt-1 flex space-x-4">
-                      <input
-                        type="text"
-                        id="discount-code-mobile"
-                        name="discount-code-mobile"
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                      />
-                      <button
-                        type="submit"
-                        className="rounded-md bg-gray-200 px-4 text-sm font-medium text-gray-600 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
-                      >
-                        Apply
-                      </button>
-                    </div>
-                  </form>
-
-                  <dl className="mt-10 space-y-6 text-sm font-medium text-gray-500">
-                    <div className="flex justify-between">
-                      <dt>Subtotal</dt>
-                      <dd className="text-gray-900">{subtotal}</dd>
-                    </div>
-                    <div className="flex justify-between">
-                      <dt className="flex">
-                        Discount
-                        <span className="ml-2 rounded-full bg-gray-200 px-2 py-0.5 text-xs tracking-wide text-gray-600">
-                          {discount.code}
-                        </span>
-                      </dt>
-                      <dd className="text-gray-900">-{discount.amount}</dd>
-                    </div>
-                    <div className="flex justify-between">
-                      <dt>Taxes</dt>
-                      <dd className="text-gray-900">{taxes}</dd>
-                    </div>
-                    <div className="flex justify-between">
-                      <dt>Shipping</dt>
-                      <dd className="text-gray-900">{shipping}</dd>
-                    </div>
-                  </dl>
-                </Disclosure.Panel>
-
-                <p className="mt-6 flex items-center justify-between border-t border-gray-200 pt-6 text-sm font-medium text-gray-900">
-                  <span className="text-base">Total</span>
-                  <span className="text-base">{total}</span>
-                </p>
-              </>
-            )}
-          </Disclosure>
-        </section>
-
-        {/* Order summary */}
         <section
           aria-labelledby="summary-heading"
-          className="hidden w-full max-w-md flex-col bg-gray-50 lg:flex"
+          className="bg-gray-50 px-4 pb-10 pt-16 sm:px-6 lg:col-start-2 lg:row-start-1 lg:bg-transparent lg:px-0 lg:pb-16"
         >
-          <h2 id="summary-heading" className="sr-only">
-            Order summary
-          </h2>
+          <div className="mx-auto max-w-lg lg:max-w-none">
+            <h2
+              id="summary-heading"
+              className="text-lg font-medium text-gray-900"
+            >
+              Order summary
+            </h2>
 
-          <ul
-            role="list"
-            className="flex-auto divide-y divide-gray-200 overflow-y-auto px-6"
-          >
-            {products.map((product) => (
-              <li key={product.id} className="flex space-x-6 py-6">
-                <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  className="h-40 w-40 flex-none rounded-md bg-gray-200 object-cover object-center"
-                />
-                <div className="flex flex-col justify-between space-y-4">
-                  <div className="space-y-1 text-sm font-medium">
-                    <h3 className="text-gray-900">{product.name}</h3>
-                    <p className="text-gray-900">{product.price}</p>
+            <ul
+              role="list"
+              className="divide-y divide-gray-200 text-sm font-medium text-gray-900"
+            >
+              {products.map((product) => (
+                <li
+                  key={product.id}
+                  className="flex items-start space-x-4 py-6"
+                >
+                  <img
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    className="h-20 w-20 flex-none rounded-md object-cover object-center"
+                  />
+                  <div className="flex-auto space-y-1">
+                    <h3>{product.name}</h3>
                     <p className="text-gray-500">{product.color}</p>
                     <p className="text-gray-500">{product.size}</p>
                   </div>
-                  <div className="flex space-x-4">
-                    <button
-                      type="button"
-                      className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
-                    >
-                      Edit
-                    </button>
-                    <div className="flex border-l border-gray-300 pl-4">
-                      <button
-                        type="button"
-                        className="text-sm font-medium text-indigo-600 hover:text-indigo-500"
-                      >
-                        Remove
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
+                  <p className="flex-none text-base font-medium">
+                    {product.price}
+                  </p>
+                </li>
+              ))}
+            </ul>
 
-          <div className="sticky bottom-0 flex-none border-t border-gray-200 bg-gray-50 p-6">
-            <form>
-              <label
-                htmlFor="discount-code"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Discount code
-              </label>
-              <div className="mt-1 flex space-x-4">
-                <input
-                  type="text"
-                  id="discount-code"
-                  name="discount-code"
-                  className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                />
-                <button
-                  type="submit"
-                  className="rounded-md bg-gray-200 px-4 text-sm font-medium text-gray-600 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
-                >
-                  Apply
-                </button>
+            <dl className="hidden space-y-6 border-t border-gray-200 pt-6 text-sm font-medium text-gray-900 lg:block">
+              <div className="flex items-center justify-between">
+                <dt className="text-gray-600">Subtotal</dt>
+                <dd>$320.00</dd>
               </div>
-            </form>
 
-            <dl className="mt-10 space-y-6 text-sm font-medium text-gray-500">
-              <div className="flex justify-between">
-                <dt>Subtotal</dt>
-                <dd className="text-gray-900">{subtotal}</dd>
+              <div className="flex items-center justify-between">
+                <dt className="text-gray-600">Shipping</dt>
+                <dd>$15.00</dd>
               </div>
-              <div className="flex justify-between">
-                <dt className="flex">
-                  Discount
-                  <span className="ml-2 rounded-full bg-gray-200 px-2 py-0.5 text-xs tracking-wide text-gray-600">
-                    {discount.code}
-                  </span>
-                </dt>
-                <dd className="text-gray-900">-{discount.amount}</dd>
+
+              <div className="flex items-center justify-between">
+                <dt className="text-gray-600">Taxes</dt>
+                <dd>$26.80</dd>
               </div>
-              <div className="flex justify-between">
-                <dt>Taxes</dt>
-                <dd className="text-gray-900">{taxes}</dd>
-              </div>
-              <div className="flex justify-between">
-                <dt>Shipping</dt>
-                <dd className="text-gray-900">{shipping}</dd>
-              </div>
-              <div className="flex items-center justify-between border-t border-gray-200 pt-6 text-gray-900">
+
+              <div className="flex items-center justify-between border-t border-gray-200 pt-6">
                 <dt className="text-base">Total</dt>
-                <dd className="text-base">{total}</dd>
+                <dd className="text-base">$361.80</dd>
               </div>
             </dl>
+
+            <Popover className="fixed inset-x-0 bottom-0 flex flex-col-reverse text-sm font-medium text-gray-900 lg:hidden">
+              <div className="relative z-10 border-t border-gray-200 bg-white px-4 sm:px-6">
+                <div className="mx-auto max-w-lg">
+                  <Popover.Button className="flex w-full items-center py-6 font-medium">
+                    <span className="mr-auto text-base">Total</span>
+                    <span className="mr-2 text-base">$361.80</span>
+                    <ChevronUpIcon
+                      className="h-5 w-5 text-gray-500"
+                      aria-hidden="true"
+                    />
+                  </Popover.Button>
+                </div>
+              </div>
+
+              <Transition.Root as={Fragment}>
+                <div>
+                  <Transition.Child
+                    as={Fragment}
+                    enter="transition-opacity ease-linear duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity ease-linear duration-300"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <Popover.Overlay className="fixed inset-0 bg-black bg-opacity-25" />
+                  </Transition.Child>
+
+                  <Transition.Child
+                    as={Fragment}
+                    enter="transition ease-in-out duration-300 transform"
+                    enterFrom="translate-y-full"
+                    enterTo="translate-y-0"
+                    leave="transition ease-in-out duration-300 transform"
+                    leaveFrom="translate-y-0"
+                    leaveTo="translate-y-full"
+                  >
+                    <Popover.Panel className="relative bg-white px-4 py-6 sm:px-6">
+                      <dl className="mx-auto max-w-lg space-y-6">
+                        <div className="flex items-center justify-between">
+                          <dt className="text-gray-600">Subtotal</dt>
+                          <dd>$320.00</dd>
+                        </div>
+
+                        <div className="flex items-center justify-between">
+                          <dt className="text-gray-600">Shipping</dt>
+                          <dd>$15.00</dd>
+                        </div>
+
+                        <div className="flex items-center justify-between">
+                          <dt className="text-gray-600">Taxes</dt>
+                          <dd>$26.80</dd>
+                        </div>
+                      </dl>
+                    </Popover.Panel>
+                  </Transition.Child>
+                </div>
+              </Transition.Root>
+            </Popover>
           </div>
         </section>
 
-        {/* Checkout form */}
-        <section
-          aria-labelledby="payment-heading"
-          className="flex-auto overflow-y-auto px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:px-8 lg:pb-24 lg:pt-0"
-        >
-          <div className="mx-auto max-w-lg">
-            <div className="hidden pb-16 pt-10 lg:flex">
-              <a href="#">
-                <span className="sr-only">Your Company</span>
-                <img
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                  className="h-8 w-auto"
-                />
-              </a>
-            </div>
-
-            <button
-              type="button"
-              className="flex w-full items-center justify-center rounded-md border border-transparent bg-black py-2 text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
-            >
-              <span className="sr-only">Pay with Apple Pay</span>
-              <svg
-                className="h-5 w-auto"
-                fill="currentColor"
-                viewBox="0 0 50 20"
+        <form className="px-4 pb-36 pt-16 sm:px-6 lg:col-start-1 lg:row-start-1 lg:px-0 lg:pb-16">
+          <div className="mx-auto max-w-lg lg:max-w-none">
+            <section aria-labelledby="contact-info-heading">
+              <h2
+                id="contact-info-heading"
+                className="text-lg font-medium text-gray-900"
               >
-                <path d="M9.536 2.579c-.571.675-1.485 1.208-2.4 1.132-.113-.914.334-1.884.858-2.484C8.565.533 9.564.038 10.374 0c.095.951-.276 1.884-.838 2.579zm.829 1.313c-1.324-.077-2.457.751-3.085.751-.638 0-1.6-.713-2.647-.694-1.362.019-2.628.79-3.323 2.017-1.429 2.455-.372 6.09 1.009 8.087.676.99 1.485 2.075 2.552 2.036 1.009-.038 1.409-.656 2.628-.656 1.228 0 1.58.656 2.647.637 1.104-.019 1.8-.99 2.475-1.979.771-1.122 1.086-2.217 1.105-2.274-.02-.019-2.133-.828-2.152-3.263-.02-2.036 1.666-3.007 1.742-3.064-.952-1.408-2.437-1.56-2.951-1.598zm7.645-2.76v14.834h2.305v-5.072h3.19c2.913 0 4.96-1.998 4.96-4.89 0-2.893-2.01-4.872-4.885-4.872h-5.57zm2.305 1.941h2.656c2 0 3.142 1.066 3.142 2.94 0 1.875-1.142 2.95-3.151 2.95h-2.647v-5.89zM32.673 16.08c1.448 0 2.79-.733 3.4-1.893h.047v1.779h2.133V8.582c0-2.14-1.714-3.52-4.351-3.52-2.447 0-4.256 1.399-4.323 3.32h2.076c.171-.913 1.018-1.512 2.18-1.512 1.41 0 2.2.656 2.2 1.865v.818l-2.876.171c-2.675.162-4.123 1.256-4.123 3.159 0 1.922 1.495 3.197 3.637 3.197zm.62-1.76c-1.229 0-2.01-.59-2.01-1.494 0-.933.752-1.475 2.19-1.56l2.562-.162v.837c0 1.39-1.181 2.379-2.743 2.379zM41.1 20c2.247 0 3.304-.856 4.227-3.454l4.047-11.341h-2.342l-2.714 8.763h-.047l-2.714-8.763h-2.409l3.904 10.799-.21.656c-.352 1.114-.923 1.542-1.942 1.542-.18 0-.533-.02-.676-.038v1.779c.133.038.705.057.876.057z" />
-              </svg>
-            </button>
+                Contact information
+              </h2>
 
-            <div className="relative mt-8">
-              <div
-                className="absolute inset-0 flex items-center"
-                aria-hidden="true"
-              >
-                <div className="w-full border-t border-gray-200" />
-              </div>
-              <div className="relative flex justify-center">
-                <span className="bg-white px-4 text-sm font-medium text-gray-500">
-                  or
-                </span>
-              </div>
-            </div>
-
-            <form className="mt-6">
-              <div className="grid grid-cols-12 gap-x-4 gap-y-6">
-                <div className="col-span-full">
-                  <label
-                    htmlFor="email-address"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Email address
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="email"
-                      id="email-address"
-                      name="email-address"
-                      autoComplete="email"
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                    />
-                  </div>
+              <div className="mt-6">
+                <label
+                  htmlFor="email-address"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Email address
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="email"
+                    id="email-address"
+                    name="email-address"
+                    autoComplete="email"
+                    className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  />
                 </div>
+              </div>
+            </section>
 
-                <div className="col-span-full">
+            <section aria-labelledby="payment-heading" className="mt-10">
+              <h2
+                id="payment-heading"
+                className="text-lg font-medium text-gray-900"
+              >
+                Payment details
+              </h2>
+
+              <div className="mt-6 grid grid-cols-3 gap-x-4 gap-y-6 sm:grid-cols-4">
+                <div className="col-span-3 sm:col-span-4">
                   <label
                     htmlFor="name-on-card"
                     className="block text-sm font-medium text-gray-700"
@@ -355,7 +212,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="col-span-full">
+                <div className="col-span-3 sm:col-span-4">
                   <label
                     htmlFor="card-number"
                     className="block text-sm font-medium text-gray-700"
@@ -373,7 +230,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="col-span-8 sm:col-span-9">
+                <div className="col-span-2 sm:col-span-3">
                   <label
                     htmlFor="expiration-date"
                     className="block text-sm font-medium text-gray-700"
@@ -391,7 +248,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="col-span-4 sm:col-span-3">
+                <div>
                   <label
                     htmlFor="cvc"
                     className="block text-sm font-medium text-gray-700"
@@ -408,8 +265,36 @@ export default function Example() {
                     />
                   </div>
                 </div>
+              </div>
+            </section>
 
-                <div className="col-span-full">
+            <section aria-labelledby="shipping-heading" className="mt-10">
+              <h2
+                id="shipping-heading"
+                className="text-lg font-medium text-gray-900"
+              >
+                Shipping address
+              </h2>
+
+              <div className="mt-6 grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-3">
+                <div className="sm:col-span-3">
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Company
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div className="sm:col-span-3">
                   <label
                     htmlFor="address"
                     className="block text-sm font-medium text-gray-700"
@@ -427,7 +312,24 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="col-span-full sm:col-span-4">
+                <div className="sm:col-span-3">
+                  <label
+                    htmlFor="apartment"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Apartment, suite, etc.
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      id="apartment"
+                      name="apartment"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
                   <label
                     htmlFor="city"
                     className="block text-sm font-medium text-gray-700"
@@ -445,7 +347,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="col-span-full sm:col-span-4">
+                <div>
                   <label
                     htmlFor="region"
                     className="block text-sm font-medium text-gray-700"
@@ -463,7 +365,7 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="col-span-full sm:col-span-4">
+                <div>
                   <label
                     htmlFor="postal-code"
                     className="block text-sm font-medium text-gray-700"
@@ -481,43 +383,49 @@ export default function Example() {
                   </div>
                 </div>
               </div>
+            </section>
 
-              <div className="mt-6 flex space-x-2">
-                <div className="flex h-5 items-center">
-                  <input
-                    id="same-as-shipping"
-                    name="same-as-shipping"
-                    type="checkbox"
-                    defaultChecked
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                  />
+            <section aria-labelledby="billing-heading" className="mt-10">
+              <h2
+                id="billing-heading"
+                className="text-lg font-medium text-gray-900"
+              >
+                Billing information
+              </h2>
+
+              <div className="mt-6 flex items-center">
+                <input
+                  id="same-as-shipping"
+                  name="same-as-shipping"
+                  type="checkbox"
+                  defaultChecked
+                  className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                <div className="ml-2">
+                  <label
+                    htmlFor="same-as-shipping"
+                    className="text-sm font-medium text-gray-900"
+                  >
+                    Same as shipping information
+                  </label>
                 </div>
-                <label
-                  htmlFor="same-as-shipping"
-                  className="text-sm font-medium text-gray-900"
-                >
-                  Billing address is the same as shipping address
-                </label>
               </div>
+            </section>
 
+            <div className="mt-10 border-t border-gray-200 pt-6 sm:flex sm:items-center sm:justify-between">
               <button
                 type="submit"
-                className="mt-6 w-full rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="w-full rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:order-last sm:ml-6 sm:w-auto"
               >
-                Pay {total}
+                Continue
               </button>
-
-              <p className="mt-6 flex justify-center text-sm font-medium text-gray-500">
-                <LockClosedIcon
-                  className="mr-1.5 h-5 w-5 text-gray-400"
-                  aria-hidden="true"
-                />
-                Payment details stored in plain text
+              <p className="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">
+                You won't be charged until the next step.
               </p>
-            </form>
+            </div>
           </div>
-        </section>
-      </main>
-    </>
+        </form>
+      </div>
+    </div>
   );
 }
