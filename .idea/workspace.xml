@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="move Footer">
-      <change afterPath="$PROJECT_DIR$/pages/categories/[id]/products/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/classNames.ts" afterDir="false" />
+    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/categories/[categoryId]/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FlyoutMenus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FlyoutMenus.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/categories/[id]/products/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/[categoryId]/products/[productId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680944162728</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add product page">
+      <created>1680945992587</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1680945992587</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +265,7 @@
     <MESSAGE value="move ShopByCategory" />
     <MESSAGE value="move FeaturedSection" />
     <MESSAGE value="move Footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="move Footer" />
+    <MESSAGE value="add product page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add product page" />
   </component>
 </project>
