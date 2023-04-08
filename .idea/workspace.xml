@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="move ShopByCategory">
-      <change afterPath="$PROJECT_DIR$/components/FeaturedSection.tsx" afterDir="false" />
+    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
@@ -42,11 +42,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/components/Footer.tsx" />
       <recent name="$PROJECT_DIR$/components/FeaturedSection.tsx" />
       <recent name="$PROJECT_DIR$/components/ShopByCollection.tsx" />
       <recent name="$PROJECT_DIR$/components/ShopByCategory.tsx" />
       <recent name="$PROJECT_DIR$/components/Introduction.tsx" />
-      <recent name="$PROJECT_DIR$/components/Navigation.tsx" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680943478232</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="move FeaturedSection">
+      <created>1680944019024</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1680944019024</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +249,7 @@
     <MESSAGE value="move Introduction" />
     <MESSAGE value="remove feature section" />
     <MESSAGE value="move ShopByCategory" />
-    <option name="LAST_COMMIT_MESSAGE" value="move ShopByCategory" />
+    <MESSAGE value="move FeaturedSection" />
+    <option name="LAST_COMMIT_MESSAGE" value="move FeaturedSection" />
   </component>
 </project>
