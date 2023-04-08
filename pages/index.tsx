@@ -217,28 +217,33 @@ export const mobileMenuOpenAtom = atom(false);
 export const classNames = (...classes: string[]) =>
   classes.filter(Boolean).join(" ");
 
+const DecorativeImage = () => {
+  return (
+    <>
+      <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
+        <img
+          src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg"
+          alt=""
+          className="h-full w-full object-cover object-center"
+        />
+      </div>
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gray-900 opacity-50"
+      />
+    </>
+  );
+};
 export default function Example() {
   const setMobileMenuOpen = useSetAtom(mobileMenuOpenAtom);
 
   return (
     <div className="bg-white">
-      {/* Mobile menu */}
       <MobileMenu navigation={navigation} currencies={currencies} />
       {/* Hero section */}
       <div className="relative bg-gray-900">
         {/* Decorative image and overlay */}
-        <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg"
-            alt=""
-            className="h-full w-full object-cover object-center"
-          />
-        </div>
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gray-900 opacity-50"
-        />
-
+        <DecorativeImage />
         {/* Navigation */}
         <header className="relative z-10">
           <nav aria-label="Top">
