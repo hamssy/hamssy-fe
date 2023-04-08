@@ -77,39 +77,101 @@ export const MobileMenu = ({ navigation, currencies }: Props) => {
                   </Tab.List>
                 </div>
                 <Tab.Panels as={Fragment}>
-                  {navigation.categories.map((category) => (
+                  {navigation.categories.map((category, categoryIdx) => (
                     <Tab.Panel
                       key={category.name}
-                      className="space-y-12 px-4 py-6"
+                      className="space-y-12 px-4 pb-6 pt-10"
                     >
-                      <div className="grid grid-cols-2 gap-x-4 gap-y-10">
-                        {category.featured.map((item) => (
-                          <div key={item.name} className="group relative">
-                            <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                              <img
-                                src={item.imageSrc}
-                                alt={item.imageAlt}
-                                className="object-cover object-center"
-                              />
-                            </div>
-                            <a
-                              href={item.href}
-                              className="mt-6 block text-sm font-medium text-gray-900"
-                            >
-                              <span
-                                className="absolute inset-0 z-10"
-                                aria-hidden="true"
-                              />
-                              {item.name}
-                            </a>
+                      <div className="grid grid-cols-1 items-start gap-x-6 gap-y-10">
+                        <div className="grid grid-cols-1 gap-x-6 gap-y-10">
+                          <div>
                             <p
-                              aria-hidden="true"
-                              className="mt-1 text-sm text-gray-500"
+                              id={`mobile-featured-heading-${categoryIdx}`}
+                              className="font-medium text-gray-900"
                             >
-                              Shop now
+                              Featured
                             </p>
+                            <ul
+                              role="list"
+                              aria-labelledby={`mobile-featured-heading-${categoryIdx}`}
+                              className="mt-6 space-y-6"
+                            >
+                              {category.featured.map((item) => (
+                                <li key={item.name} className="flex">
+                                  <a href={item.href} className="text-gray-500">
+                                    {item.name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
-                        ))}
+                          <div>
+                            <p
+                              id="mobile-categories-heading"
+                              className="font-medium text-gray-900"
+                            >
+                              Categories
+                            </p>
+                            <ul
+                              role="list"
+                              aria-labelledby="mobile-categories-heading"
+                              className="mt-6 space-y-6"
+                            >
+                              {category.categories.map((item) => (
+                                <li key={item.name} className="flex">
+                                  <a href={item.href} className="text-gray-500">
+                                    {item.name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-1 gap-x-6 gap-y-10">
+                          <div>
+                            <p
+                              id="mobile-collection-heading"
+                              className="font-medium text-gray-900"
+                            >
+                              Collection
+                            </p>
+                            <ul
+                              role="list"
+                              aria-labelledby="mobile-collection-heading"
+                              className="mt-6 space-y-6"
+                            >
+                              {category.collection.map((item) => (
+                                <li key={item.name} className="flex">
+                                  <a href={item.href} className="text-gray-500">
+                                    {item.name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+
+                          <div>
+                            <p
+                              id="mobile-brand-heading"
+                              className="font-medium text-gray-900"
+                            >
+                              Brands
+                            </p>
+                            <ul
+                              role="list"
+                              aria-labelledby="mobile-brand-heading"
+                              className="mt-6 space-y-6"
+                            >
+                              {category.brands.map((item) => (
+                                <li key={item.name} className="flex">
+                                  <a href={item.href} className="text-gray-500">
+                                    {item.name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
                       </div>
                     </Tab.Panel>
                   ))}

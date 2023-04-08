@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/CategoryFilter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProductList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/order/[orderId].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/category/[categoryId]/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[categoryId]/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MobileMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MobileMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680955427938</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="modify product list and add order page">
+      <created>1680956213622</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680956213622</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +297,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="modify function" />
     <MESSAGE value="extract MobileMenu" />
     <MESSAGE value="move MobileMenu" />
     <MESSAGE value="add props" />
@@ -315,6 +321,7 @@
     <MESSAGE value="modify product page" />
     <MESSAGE value="modify checkout page" />
     <MESSAGE value="add cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cart" />
+    <MESSAGE value="modify product list and add order page" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify product list and add order page" />
   </component>
 </project>
