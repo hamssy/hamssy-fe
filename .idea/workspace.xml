@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mocks/dummy_product.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocks/handlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/handlers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/category/[categoryId]/product/[productId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[categoryId]/product/[productId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,11 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/mocks/dummy_product.ts" />
       <recent name="$PROJECT_DIR$/mocks/dummy_products.ts" />
       <recent name="$PROJECT_DIR$/pages/index.tsx" />
       <recent name="$PROJECT_DIR$/pages/_app.tsx" />
       <recent name="$PROJECT_DIR$/utils/classNames.ts" />
-      <recent name="$PROJECT_DIR$/components/Footer.tsx" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680935186097</updated>
       <workItem from="1680935189524" duration="7321000" />
-      <workItem from="1681017290208" duration="5825000" />
+      <workItem from="1681017290208" duration="7247000" />
     </task>
     <task id="LOCAL-00001" summary="modify function">
       <created>1680937184024</created>
@@ -349,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681022888300</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update product page ui">
+      <created>1681023156751</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1681023156751</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
