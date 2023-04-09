@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mocks/browser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mocks/handlers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mocks/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mocks/server.ts" afterDir="false" />
+    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="extract `&#10;4]]]]]]]]]]]]]]]]&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;`\]]]]]]]]]`">
+      <change afterPath="$PROJECT_DIR$/components/Product.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680935186097</updated>
       <workItem from="1680935189524" duration="7321000" />
+      <workItem from="1681017290208" duration="1417000" />
     </task>
     <task id="LOCAL-00001" summary="modify function">
       <created>1680937184024</created>
@@ -324,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680964758778</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="set up msw">
+      <created>1681009042921</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1681009042921</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +349,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="move CurrencySelector" />
     <MESSAGE value="move Account" />
     <MESSAGE value="move Logo and extract FlywayMenus" />
     <MESSAGE value="rename page" />
@@ -368,6 +373,7 @@
     <MESSAGE value="move Footer to _app" />
     <MESSAGE value="change font" />
     <MESSAGE value="update mock data" />
-    <option name="LAST_COMMIT_MESSAGE" value="update mock data" />
+    <MESSAGE value="set up msw" />
+    <option name="LAST_COMMIT_MESSAGE" value="set up msw" />
   </component>
 </project>
