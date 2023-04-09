@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mocks/dummy_products.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/handlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/handlers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/category/[categoryId]/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[categoryId]/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/[categoryId]/product/[productId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[categoryId]/product/[productId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680935186097</updated>
       <workItem from="1680935189524" duration="7321000" />
-      <workItem from="1681017290208" duration="5096000" />
+      <workItem from="1681017290208" duration="5825000" />
     </task>
     <task id="LOCAL-00001" summary="modify function">
       <created>1680937184024</created>
@@ -341,7 +335,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681018961524</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="mock api">
+      <created>1681022415145</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681022415145</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update product page ui">
+      <created>1681022888300</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1681022888300</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,8 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="move Logo and extract FlywayMenus" />
-    <MESSAGE value="rename page" />
     <MESSAGE value="CurrencySelector" />
     <MESSAGE value="extract Navigation" />
     <MESSAGE value="move Navigation as Header" />
@@ -385,6 +391,8 @@
     <MESSAGE value="update mock data" />
     <MESSAGE value="set up msw" />
     <MESSAGE value="extract Product" />
-    <option name="LAST_COMMIT_MESSAGE" value="extract Product" />
+    <MESSAGE value="mock api" />
+    <MESSAGE value="update product page ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="update product page ui" />
   </component>
 </project>
