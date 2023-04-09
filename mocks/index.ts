@@ -4,7 +4,7 @@
     server.listen();
   } else {
     const { worker } = require("./browser");
-    worker.start();
+    await worker.start();
   }
 })();
 

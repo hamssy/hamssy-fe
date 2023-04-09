@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="extract `&#10;4]]]]]]]]]]]]]]]]&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;`\]]]]]]]]]`">
-      <change afterPath="$PROJECT_DIR$/components/Product.tsx" afterDir="false" />
+    <list default="true" id="b5c4ca9e-5559-4f9f-8e78-e9c026d60d7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mocks/dummy_products.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocks/handlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/handlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mocks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/[categoryId]/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[categoryId]/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,31 +30,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/hyemin/hamssy-fe/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/hyemin/hamssy-fe/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/hyemin/hamssy-fe/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "/Users/hyemin/hamssy-fe/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/mocks/dummy_products.ts" />
       <recent name="$PROJECT_DIR$/pages/index.tsx" />
       <recent name="$PROJECT_DIR$/pages/_app.tsx" />
       <recent name="$PROJECT_DIR$/utils/classNames.ts" />
       <recent name="$PROJECT_DIR$/components/Footer.tsx" />
-      <recent name="$PROJECT_DIR$/components/FeaturedSection.tsx" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680935186097</updated>
       <workItem from="1680935189524" duration="7321000" />
-      <workItem from="1681017290208" duration="1417000" />
+      <workItem from="1681017290208" duration="5096000" />
     </task>
     <task id="LOCAL-00001" summary="modify function">
       <created>1680937184024</created>
@@ -330,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681009042921</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="extract Product">
+      <created>1681018961524</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1681018961524</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +360,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="move Account" />
     <MESSAGE value="move Logo and extract FlywayMenus" />
     <MESSAGE value="rename page" />
     <MESSAGE value="CurrencySelector" />
@@ -374,6 +384,7 @@
     <MESSAGE value="change font" />
     <MESSAGE value="update mock data" />
     <MESSAGE value="set up msw" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up msw" />
+    <MESSAGE value="extract Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="extract Product" />
   </component>
 </project>
